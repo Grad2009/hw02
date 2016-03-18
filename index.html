@@ -1,0 +1,84 @@
+﻿
+<!doctype html>
+<html>
+<head>
+    <title>Bubble sort</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="calc.css">
+	
+	<!-- подключаем стили Mocha, для отображения результатов -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.4.5/mocha.css">
+  <!-- подключаем библиотеку Mocha -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.4.5/mocha.js"></script>
+  <!-- настраиваем Mocha: предстоит BDD-тестирование -->
+  <script>
+    mocha.setup('bdd');
+  </script>
+
+  <!-- подключаем chai -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.min.js"></script>
+  <!-- в chai есть много всего, выносим assert в глобальную область -->
+  <script>
+    var assert = chai.assert;
+  </script>
+</head>
+
+<body>
+
+<div id="calculator">
+	<!-- Screen and clear key -->
+	<div class="top">
+		<input type="text" name="input" size="16" class="screen" id="screen">
+	</div>
+	<!--<div class="operator">	
+		<span id="clear">C</span>
+		<span id="backspace">←</span>
+		<span id="sqrt">√</span>
+	</div>
+	<div><p></p></div>-->
+	<div class="keys">
+		<span id="clear">C</span>
+		<span id="backspace">←</span>
+		<span id="sqrt">√</span>
+		<!-- operators and other keys -->
+		<span class="btn">7</span>
+		<span class="btn">8</span>
+		<span class="btn">9</span>
+		<span class="btn" class="operator">+</span>
+		<span class="btn">4</span>
+		<span class="btn">5</span>
+		<span class="btn">6</span>
+		<span class="btn" class="operator">-</span>
+		<span class="btn">1</span>
+		<span class="btn">2</span>
+		<span class="btn">3</span>
+		<span class="btn" class="operator">/</span>
+		<span class="btn">0</span>
+		<span class="btn">.</span>
+		<span class="btn" class="operator">=</span>
+		<span class="btn">*</span>
+	</div>
+</div>
+
+<p> Калькулятор позволяет также пользоваться кнопками клавиатуры,
+правда курсор при этом должен находиться на экране калькулятора.
+</p>
+
+<script src="calcu.js"></script>
+
+<script src="test.js"></script>
+
+<div id="mocha"></div></div>	
+	<script>
+    	mocha.setup('bdd');
+	</script>
+	
+	<script>		
+    	mocha.run();
+ 	</script>
+  
+</body>
+</html>

@@ -1,4 +1,4 @@
-# hw02
+# hw02 Calculator
 
 Second task in "Professional javascript" course by TEAM International: Calculator
 
